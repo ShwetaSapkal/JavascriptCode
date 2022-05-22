@@ -1,0 +1,65 @@
+<html>
+<body>
+
+    <script>
+        var text = "Hello all Good Morning msg to all";
+        console.log(text);
+
+        console.log(text.toLowerCase());
+        console.log(text.toUpperCase());
+
+        // charAt() get a particular character by using index 
+        let a = text.charAt(9);
+        console.log(a);
+
+        // concat the string
+        var text2 = "webdevelopment";
+        var res = text.concat(text2);
+        console.log(res);
+
+        // calculate length i.e., it also calculate  the space
+        console.log(text.length);
+
+
+        // slice (it takes start index and end index)
+        // let res1 = text.slice(4);
+        let res1 = text.slice(0, 10); //10-1 index value will be retrive , end parameter is sed as index // start index and end index works only when it get start index , it cant calcuate the space.
+                                       // (end index value is skipped)
+        console.log(res1);
+
+        // Replace
+        text = text.replace("Hello", "Hii");
+        text = text.replace(/all/g,"Hii"); // occurance of string is multiple time it replace its globally
+        console.log(text);
+
+        // substring
+        var r1 = text.substring(1, 4); // 4 deifines the count i.e, 3 pahije astil tar 4 write karaych
+        console.log(r1);
+        var r2 = text.substring(3); // 
+        console.log(r2);
+
+        // split function : split your words and stores like an array
+
+        var splstr = text.split(" "); // split by space
+        console.log(splstr);
+
+        var text3 = "Hello,all,Good,Morning,msg,to,all";
+        var splstr1 = text3.split(",",3); // split by comma
+        console.log(splstr1);
+
+        // indexof
+        var text4 = "Hello all Good Morning msg to all";
+        var r3 = text4.indexOf("a");
+        console.log(r3);
+
+        // last index
+        var r4 = text4.lastIndexOf("a");
+        console.log(r4);
+
+        // trim - sed to remove space if any before or after string
+        var text5 = "      Hello all Good Morning msg to all    ";
+        var r5 = text5.trim();
+        console.log(r5);
+        </script>
+    </body>
+</html>

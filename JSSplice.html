@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+
+        var colors = ["red", "blue", "green", "black"];
+
+       // colors.splice(1, 0, "white", "pink");
+
+        //const colorCopy = colors.slice(2); // colorCopy is of array type
+
+        //colors.sort();
+        const colorCopy = colors.slice(1, 3);
+        colors.sort(); // only work with string , not for numbers
+        colors.reverse();//only work with string , not for numbers
+
+
+
+        var data = "";
+        data = "<ol type='circle'>";
+        for (let i = 0; i < colors.length; i++) {
+            data += "<li>" + colors[i] + "</li>";
+        }
+
+
+        document.getElementById("d1").innerHTML = colors;
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+
+    <div id="d1"></div>
+    <p>
+        Enter you name:<input type="button" value="Display" onclick="display()" />
+
+    </p>
+    <script>
+        function display()
+        {
+            if (localStorage)
+            {
+                let name = localStorage.getItem("username");
+                document.getElementById("d1").innerHTML = "Welcome -  " + name;
+            }
+        }
+    </script>
+
+</body>
+</html>

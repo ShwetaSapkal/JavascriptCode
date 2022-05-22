@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+
+        var numbers = [34, 77, 54, 89, 60];
+       // console.log(numbers.length);
+
+       numbers.splice(2, 1,4,4);
+        // const numCopy = numbers.slice(2);
+        //let res1 = numbers.slice(0, 3);
+
+        //numbers = numbers.replace(34,77); // not done
+
+       // var r3 = numbers.indexOf(77);
+       // var r4 = numbers.lastIndexOf(60);
+// slice
+        //  numbers.push(11);
+        //numbers.pop();
+        //numbers.shift();
+        //numbers.unshift();
+
+
+        var data = "";
+        data = "<ol type='circle'>";
+        for (let i = 0; i < numbers.length; i++) {
+            data += "<li>" + numbers[i] + "</li>";
+        }
+
+
+        document.getElementById("d1").innerHTML = numbers;
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head>
+    
+    </head>
+<body>
+
+    <script>
+        var x = 10;
+        const pi = 3.14; // global scope pi value
+        const max = 100;
+
+        function test1()
+        {
+            var x = 20;
+         //   const pi = 3.15; // function scope of pi value
+            const max = 50;
+            console.log("inside the test1:" + x);
+            console.log("inside the test1:" + max);
+        }
+
+        function test2()
+        {
+            const max = 50;
+             console.log("inside the test2:" + pi);
+        }
+
+       
+            console.log("outside function:" + x);
+
+
+        {
+            let x = 30; // within a block
+            const max=300
+            console.log("inside a block:"+max);
+        }
+
+        {
+            //var x = 30;
+            console.log("inside block"+x);
+            var y = 20;
+        }
+        console.log("outside block:" + y);
+
+       
+
+        test1();
+        test2();
+        
+
+        </script>
+
+
+
+
+
+
+
+
+    </body>
+</html>

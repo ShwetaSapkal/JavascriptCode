@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <script>
+
+        var colors = ["red", "blue", "green", "black"];
+
+        var cities = ["pune", "mumbai", "thane", "nashik"];
+
+        // arrange data in list
+
+        var data = "<ol>";
+        for (let i = 0; i < colors.length; i++) {
+            data += "<li>" + colors[i] + "</li>";
+        }
+        data += "</ol>";
+
+
+        console.log(data);
+
+        var data1 = "<ol>";
+        for (let i = 0; i < cities.length; i++) {
+            data1 += "<li>" + cities[i] + "</li>";
+        }
+        data1 += "</ol>";
+
+        document.getElementById("d1").innerHTML = data;
+        document.getElementById("d2").innerHTML = data1;
+    </script>
+</body>
+</html>
