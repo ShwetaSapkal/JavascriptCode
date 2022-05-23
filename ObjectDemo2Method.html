@@ -1,0 +1,51 @@
+<html>
+<body>
+    <div id="d1"></div>
+    <script>
+
+        function add()
+        {
+            //code
+        }
+
+        var emp = {};
+        emp.Id = 1;
+        emp.Name = "User2";
+
+        const employee =
+        {
+            firstname: "User1",
+            lastname: "User",
+            age: 30,
+            fullName: function()
+            {
+               return  this.firstname + " " + this.lastname; // this is ese to refer current object
+
+            }
+        }
+        const product =
+        {
+            id: 1,
+            name: "mouse",
+            price: 899,
+            discountAmount: function ()
+            {
+                return this.price *0.10;
+            },
+
+            display: function ()
+            {
+                return this.id + " "+this.name + " " + this.price;
+            }
+
+        }
+
+
+        // document.getElementById("d1").innerHTML = product.price + " have discount of" + product.discountAmount;
+        document.getElementById("d1").innerHTML = "Price after 10% discount"+product.discountAmount();
+        console.log(employee)
+
+    </script>
+</body>
+
+</html>

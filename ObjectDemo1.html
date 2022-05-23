@@ -1,0 +1,38 @@
+<html>
+<body>
+    <div id="d1"></div>
+    <script>
+
+        var emp = {};
+        emp.id = 1;
+        emp.Name = "User2";
+
+        const employee =
+        {
+            firstname: "User1",
+            lastname: "User",
+            age:30
+        }
+        const product =
+        {
+            id: 1,
+            name: "mouse",
+            price: 899
+        }
+
+        console.log(employee.firstname + employee["lastname"]);
+        console.log(product["name"] + product.price);
+        console.log(emp.Name);
+
+        //document.getElementById("d1").innerHTML = Object.values(employee);
+        console.log(employee); // json representaion
+        document.getElementById("d1").innerHTML = JSON.stringify(employee); //
+
+
+        document.getElementById("d1").innerHTML = JSON.stringify(product);
+      
+
+        </script>
+    </body>
+
+</html>

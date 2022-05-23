@@ -1,0 +1,29 @@
+<div class="register">
+    <form action="login.html">
+        <p>
+            <label for="Input1" class="form-label">Full Name</label>
+            <input type="text" required class="form-control" id="Input1" placeholder="your name">
+        </p>
+        <p>
+            <label for="Input2" class="form-label">Email address</label>
+            <input type="email" required class="form-control" id="Input2" placeholder="name@example.com">
+        </p>
+        <p>
+            <label for="Input3" class="form-label">Password</label>
+            <input type="password" required class="form-control" id="Input3" placeholder="password">
+        </p>
+        <p>
+            <label for="Input4" class="form-label">Confirm  Password</label>
+            <input type="password" required class="form-control" id="Input4" placeholder="re write the password">
+        </p>
+        <p>
+            <small id="error" style="color: red;"></small>
+        </p>
+        <p>
+            <button type="submit" class="btn btn-outline-primary"
+                    onclick="return validatePassword()">
+                Register
+            </button>
+        </p>
+    </form>
+</div>

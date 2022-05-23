@@ -1,0 +1,35 @@
+<html>
+<body>
+    <div id="d1"></div>
+    <script>
+       
+        // name,rollno,3 sub marks,total,perce
+
+        const student =
+        {
+            rollno: 1,
+            firstname: "shweta",
+            ML: 88,
+            Javascript: 77,
+            BigData:78,
+            
+
+            percent: function () {
+                return ((this.ML + this.Javascript + this.BigData) / 300) * 100; // this is ese to refer current object
+
+            },
+
+            display: function ()
+            {
+                return "Roll No:" + this.rollno + "Name: " + this.firstname + "Percentage: " + this.percent();
+            }
+
+        }
+       
+
+
+        document.getElementById("d1").innerHTML = student.display();
+
+    </script>
+</body>
+</html>
