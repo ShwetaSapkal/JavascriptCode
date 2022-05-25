@@ -1,0 +1,34 @@
+<html>
+<body>
+    <div id="d1"></div>
+    <script>
+
+        const employee =
+        {
+            firstname: "Shweta",
+            lastname: "Sapkal",
+            age: 30,
+            fullName: function()
+            {
+               return  this.firstname + " " + this.lastname;
+
+            }
+        }
+
+        const member =
+        {
+
+            firstname: "User1",
+            lastname: "User",
+
+        }
+
+        let empinfo = employee.fullName.bind(member);
+        document.getElementById("d1").innerHTML = empinfo();
+        // It will borrow the details and bind function returns function body i,.e information
+        
+
+    </script>
+</body>
+
+</html>

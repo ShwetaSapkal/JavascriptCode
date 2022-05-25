@@ -1,0 +1,33 @@
+<html>
+<body>
+    <div id="d1"></div>
+    
+    <script>
+
+
+        // call abck function
+      //1]call back function is pass as an argument to the function
+        //2]first add() finishes its execution and then add() give a call to the next call function
+        //3] i.e, display()
+        
+
+
+
+        function add(a,b)
+        {
+            let sum = a + b;
+            display(sum);
+
+        }
+
+        function display(sum) {
+            document.getElementById("d1").innerHTML = "addition is"+sum;
+
+        }
+
+        add(35,67);
+
+    </script>
+</body>
+
+</html>

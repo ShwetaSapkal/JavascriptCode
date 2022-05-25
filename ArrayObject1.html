@@ -1,0 +1,43 @@
+<html>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <script>
+
+        const employees = [
+            {
+                firstname: "shweta",
+                lastname: "sapkal",
+                city: "pune"
+            },
+
+            {
+                firstname: "supriya",
+                lastname: "shinde",
+                city: "Pune"
+            },
+
+            {
+                firstname: "shubham",
+                lastname: "sapkal",
+                city: "Baramati"
+            }
+        ]
+
+
+        document.getElementById("d1").innerHTML = employees[2].firstname + " " + employees[2].lastname + employees[2].city;
+
+        var data = "<table border='1'><tr><th>First Name</th><th> Last Name</th><th> City</th></tr>";
+
+        for (let i = 0; i < employees.length; i++) {
+            data += "<tr><td>" + employees[i].firstname + "</td><td>" + employees[i].lastname +
+                "</td><td>" + employees[i].city + "</td></tr>";
+        }
+        data += "</table>";
+
+        document.getElementById("d2").innerHTML = data;
+
+    </script>
+</body>
+
+</html>
