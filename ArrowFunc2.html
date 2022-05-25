@@ -1,0 +1,46 @@
+<html>
+<body>
+    <div id="d1"></div>
+
+    <button id="btn1">Click Me!</button>
+    <div id="d2"></div>
+
+    <button id="btn2">Click Me!</button>
+    <div id="d3"></div>
+
+
+    <button id="btn3">Click Me!</button>
+    <div id="d4"></div>
+    <script>
+
+
+        let myFunction = (a, b) => a * b;
+        document.getElementById("d1").innerHTML = myFunction(3, 4);
+
+        var hello;
+
+        hello = () => {
+            document.getElementById("d2").innerHTML += "click here";
+        }
+        document.getElementById("btn1").addEventListener("click", hello);
+
+
+        hello = () => {
+            document.getElementById("d3").innerHTML += myFunction(5, 5);
+        }
+        document.getElementById("btn2").addEventListener("click", hello);
+
+
+        let myFunction1 = (a, b) => a + b;
+
+        hello = () => {
+            document.getElementById("d4").innerHTML += myFunction1(5, 5);
+        }
+        document.getElementById("btn3").addEventListener("click", hello);
+
+
+    </script>
+
+
+</body>
+</html>

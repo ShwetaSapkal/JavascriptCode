@@ -1,0 +1,31 @@
+<html>
+<body>
+   
+    <div id="parent">
+        <button type="button">Parent</button>
+        <div id="child">
+            <button type="button">get Empls</button>
+            </div>
+        </div>
+        
+
+    
+
+       <script>
+           // bubbling(bottom-up approach)->default ,and capturing in javascript
+
+           document.getElementById("parent").addEventListener("click", function () {
+               alert("inside parent");
+           }, true);
+
+           document.getElementById("child").addEventListener("click", function () {
+               alert("inside the child");
+           }, false);
+
+
+       </script>
+
+    
+
+</body>
+</html>
